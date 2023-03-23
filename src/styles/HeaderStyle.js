@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Image from "next/image";
 import BackgroundImg from "../../public/BackgroundImg.jpg";
 
@@ -31,6 +31,17 @@ export const BackgroundImage = styled.div`
   }
 `;
 
+const slideInFromRightAndFadeIn = keyframes`
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+`;
+
 export const HeaderContent = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -42,11 +53,14 @@ export const HeaderContent = styled.div`
   padding: 2rem 0.5rem;
   box-sizing: border-box;
   color: #fff;
+  opacity: 0;
+  animation: ${slideInFromRightAndFadeIn} 1s forwards 1s;
 
   @media (min-width: 769px) {
     padding-top: 5rem;
   }
 `;
+
 
 export const LogoSection = styled.section`
   display: flex;
