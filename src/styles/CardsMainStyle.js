@@ -3,12 +3,14 @@ import styled from "styled-components";
 export const StyledCards = styled.section`
   padding: 2rem 0;
   background-color: #f9f9f9;
+  color: #7B3F12;
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 2rem;
+    
+    
   }
 
   .card-list {
@@ -21,7 +23,7 @@ export const StyledCards = styled.section`
   .card {
     position: relative;
     width: 280px;
-    min-height: 550px;
+    min-height: 520px;
     margin: 1rem 1rem;
     padding: 1rem 2rem;
     background-color: #fff;
@@ -60,15 +62,17 @@ export const StyledCards = styled.section`
     }
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      min-height: 130px;
+      min-height: 100px;
+  
     }
 
     p {
       font-size: 1.2rem;
       color: #333;
+      text-align: justify;
     }
 
     img {
