@@ -1,33 +1,38 @@
 import styled from "styled-components";
 
 export const LegalDecisionsBox = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
   color: #7b3f12;
   padding: 0 1rem;
   border: 1px solid transparent;
-
-  > h1 {
-    text-align: center;
-    padding: 0 1rem;
-    font-size: 1.8rem;
-  }
+  background-color: #f9f9f9;
 
   > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 
-    p {
-      text-align: justify;
-      background-color: #fff;
-      padding: 0.5rem;
-      border-radius: 4px;
+    h1 {
+      text-align: center;
+      padding: 0 1rem;
+      font-size: 1.8rem;
+      margin-top: 0;
+    }
 
-      span {
-        font-weight: bolder;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        text-align: justify;
+        background-color: #fff;
+        padding: 0.5rem;
+        border-radius: 4px;
+        padding: .4rem .8rem;
+
+        span {
+          font-weight: bolder;
+        }
       }
     }
   }

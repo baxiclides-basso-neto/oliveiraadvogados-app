@@ -85,7 +85,8 @@ const CardsMain = () => {
             sejam respeitadas, incluindo intervalos e férias remuneradas.
           </p>
         </div>
-        <ContactButton>
+      </div>
+      <ContactButton>
           <ContactButtonIcon
             src="whatsapp.svg"
             alt="WhatsApp Icon"
@@ -94,7 +95,6 @@ const CardsMain = () => {
           />
           Fale conosco pelo WhatsApp
         </ContactButton>
-      </div>
     </StyledCards>
   );
 };

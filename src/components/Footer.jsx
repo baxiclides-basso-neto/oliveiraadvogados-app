@@ -4,6 +4,8 @@ import { Footer } from "@/styles/FooterStyle";
 const FooterComponent = () => {
   return (
     <Footer>
+      <h3>ENTRE EM CONTATO:</h3>
+      <h3>Dr. Ricardo Oliveira Junior - 221.234 OAB/SP</h3>
       <h4>Rua das Acácias, 123 - Centro, São Paulo/SP, 01010-010, Brasil</h4>
       <div>
         <div>

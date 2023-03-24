@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCards = styled.section`
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: #f9f9f9;
   color: #7b3f12;
   h2 {
@@ -12,15 +12,33 @@ export const StyledCards = styled.section`
 
   .card-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 769px) {
+      display: flex;
+      flex-direction: row;
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        height: 6px; /* altura da barra de rolagem */
+      }
+      &::-webkit-scrollbar-track {
+        background-color: #f2f2f2; /* cor de fundo da barra de rolagem */
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #ccc; /* cor do "ponteiro" da barra de rolagem */
+        border-radius: 3px; /* borda arredondada do "ponteiro" */
+        width: 30px; /* largura do "ponteiro" */
+      }
+    }
   }
 
   .card {
-    position: relative;
     width: 280px;
-    min-height: 520px;
+    min-width: 280px;
+    min-height: 500px;
     margin: 1rem 1rem;
     padding: 1rem 2rem 0;
     background-color: #fff;
@@ -61,16 +79,18 @@ export const StyledCards = styled.section`
     img {
       width: 100%;
       max-height: 150px;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
   }
   h3 {
     font-size: 1.3rem;
     font-weight: 700;
     min-height: 100px;
+    margin-bottom: 0rem;
   }
 
   p {
+    margin-top: 0;
     font-size: 1.2rem;
     text-align: justify;
   }
@@ -84,8 +104,8 @@ export const ContactButton = styled.button`
   max-width: 320px;
   width: 320px;
   height: 3rem;
-  margin-top: 1rem;
-  margin-left: 0;
+  margin: 2rem auto;
+  margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 4px;
   border: none;

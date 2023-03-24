@@ -8,6 +8,11 @@ export const Footer = styled.footer`
   max-width: 1200px;
   margin: 0 auto;
 
+  >h3{
+    padding-left: .5rem;
+    margin-bottom: 0;
+  }
+
   > h4 {
     padding: 0.5rem;
     margin-top: 0.5rem;

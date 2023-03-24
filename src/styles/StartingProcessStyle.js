@@ -18,16 +18,24 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+
   }
 `;
 
 export const Card = styled.div`
   background-color: rgba(168, 150, 140, 0.55);
-
+  width: 90%;
+  min-height: 230px;
   border-radius: 0 10px 0px 10px;
   color: white;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
+  transition: 1s ease-out;
+
+  &:hover{
+    background-color: rgba(101, 78, 70, 0.8);
+  }
 `;
 
 export const Title = styled.h2`
@@ -41,6 +49,7 @@ export const Paragraph = styled.p`
 
 export const IconImage = styled(Image)`
   background-color: #fff;
+  margin-top: 1rem;
   padding: 0.5rem;
   border-radius: 50%;
   transition: transform 0.2s ease-out;

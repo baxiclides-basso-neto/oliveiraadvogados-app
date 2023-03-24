@@ -4,7 +4,7 @@ import BackgroundImg from "../../public/BackgroundImg.jpg";
 
 export const HeaderWrapper = styled.div`
   position: relative;
-  min-height: 90vh;
+  min-height: 60vh;
 `;
 
 export const BackgroundImage = styled.div`
@@ -54,7 +54,7 @@ export const HeaderContent = styled.div`
   box-sizing: border-box;
   color: #fff;
   opacity: 0;
-  animation: ${slideInFromRightAndFadeIn} 1s forwards 1s;
+  animation: ${slideInFromRightAndFadeIn} 1s forwards .5s;
 
   @media (min-width: 769px) {
     padding-top: 5rem;
