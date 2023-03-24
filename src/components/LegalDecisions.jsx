@@ -1,6 +1,9 @@
 import { ContactButton } from "@/styles/CardsMainStyle";
 import { ContactButtonIcon } from "@/styles/HeaderStyle";
-import { LegalDecisionsBox } from "@/styles/LegalDecisionsStyle";
+import {
+  ContactButtonLegalDecisions,
+  LegalDecisionsBox,
+} from "@/styles/LegalDecisionsStyle";
 import React from "react";
 
 const LegalDecisionsComponent = () => {
@@ -45,7 +48,7 @@ const LegalDecisionsComponent = () => {
           Regional do Trabalho da 2ª Região - Processo nº
           0001234-56.2019.5.02.0034.
         </p>
-        <ContactButton>
+        <ContactButtonLegalDecisions>
           <ContactButtonIcon
             src="whatsapp.svg"
             alt="WhatsApp Icon"
@@ -53,7 +56,7 @@ const LegalDecisionsComponent = () => {
             height={20}
           />
           Fale conosco pelo WhatsApp
-        </ContactButton>
+        </ContactButtonLegalDecisions>
       </div>
     </LegalDecisionsBox>
   );

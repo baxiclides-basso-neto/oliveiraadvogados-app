@@ -33,7 +33,7 @@ export const LegalDecisionsBox = styled.div`
   }
 `;
 
-export const ContactButton = styled.button`
+export const ContactButtonLegalDecisions = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@ export const ContactButton = styled.button`
   width: 320px;
   height: 3rem;
   margin-top: 1rem;
-  margin-left: 0;
+  margin-bottom: 2rem;
   padding: 0.5rem;
   border-radius: 4px;
   border: none;
